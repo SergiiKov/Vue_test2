@@ -25,6 +25,8 @@
        <li class="list-item" v-for="(note, idx) in notes">{{toUpperCase(note)}}
         <button class="btn danger" v-on:click="remove(idx)">Delete</button>
        </li>
+       <hr />
+       <li><strong>All text: {{notes.length}}</strong> doble: {{doblecount}}</li>
      </ul>
      <div v-else>Test</div>
      
