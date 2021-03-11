@@ -8,9 +8,9 @@ const App = {
         }
     },
     methods: {
-        inputChangeHandler(event) {
-            this.inputValue = event.target.value
-        },
+        // inputChangeHandler(event) {
+        //     this.inputValue = event.target.value
+        // },
         addNote() {
            if(this.inputValue !== '') {
             this.notes.push(this.inputValue);

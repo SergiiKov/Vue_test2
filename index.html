@@ -13,9 +13,10 @@
      <div class="form-control">
        <!-- v-bind:name    :name
        v-on:name  @name -->
-       <input type="text" :placeholder="plaseholderString" 
-                          :value="inputValue" 
-                          @input="inputChangeHandler"
+        <!-- @input="inputChangeHandler"
+       :value="inputValue"  -->
+       <input type="text" :placeholder="plaseholderString"    
+                          v-model="inputValue"
                           @keypress.enter="addNote"/>
      </div>
      <h2>InputValue: {{inputValue}}</h2>
