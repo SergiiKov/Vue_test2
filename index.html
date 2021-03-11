@@ -19,12 +19,12 @@
      <h2>InputValue: {{inputValue}}</h2>
      <button class="btn" v-on:click="addNote">Add</button>
      <hr />
-     <ul class="list">
+     <ul class="list" v-if="notes.length !==0">
        <li class="list-item" v-for="(note, idx) in notes">{{note}}
         <button class="btn danger" v-on:click="remove(idx)">Delete</button>
        </li>
-      
      </ul>
+     <div v-else>Test</div>
      
    </div>
  </div>

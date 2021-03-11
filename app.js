@@ -4,7 +4,7 @@ const App = {
             plaseholderString: 'input text',
             title: 'Title',
             inputValue: '',
-            notes: ['123']
+            notes: []
         }
     },
     methods: {
@@ -12,8 +12,10 @@ const App = {
             this.inputValue = event.target.value
         },
         addNote() {
+           if(this.inputValue !== '') {
             this.notes.push(this.inputValue);
             this.inputValue='';
+           } 
         },
         remove(idx) {
             this.notes.splice(idx, 1)
