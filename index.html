@@ -11,10 +11,12 @@
    <div class="card">
      <h1>{{title}}</h1>
      <div class="form-control">
-       <input type="text" v-bind:placeholder="plaseholderString" 
-                          v-bind:value="inputValue" 
-                          v-on:input="inputChangeHandler"
-                          v-on:keypress.enter="addNote"/>
+       <!-- v-bind:name    :name
+       v-on:name  @name -->
+       <input type="text" :placeholder="plaseholderString" 
+                          :value="inputValue" 
+                          @input="inputChangeHandler"
+                          @keypress.enter="addNote"/>
      </div>
      <h2>InputValue: {{inputValue}}</h2>
      <button class="btn" v-on:click="addNote">Add</button>
