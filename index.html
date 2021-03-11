@@ -13,12 +13,14 @@
      <div class="form-control">
        <input type="text" v-bind:placeholder="plaseholderString" 
                           v-bind:value="inputValue" 
-        inputChangeHandler
                           v-on:input="inputChangeHandler"/>
      </div>
      <h2>InputValue: {{inputValue}}</h2>
-     <button class="btn ">Add</button>
+     <button class="btn" v-on:click="addNote">Add</button>
      <hr />
+     <ul class="list">
+       <li class="list-item" v-for="note in notes">{{note}}</li>
+     </ul>
    </div>
  </div>
     <script src="https://unpkg.com/vue@next"></script>

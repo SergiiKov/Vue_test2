@@ -3,12 +3,16 @@ const App = {
         return {
             plaseholderString: 'input text',
             title: 'Title',
-            inputValue: ''
+            inputValue: '',
+            notes: ['123']
         }
     },
     methods: {
-        inputChangeHandler() {
-            
+        inputChangeHandler(event) {
+            this.inputValue = event.target.value
+        },
+        addNote() {
+            this.notes.push(this.inputValue)
         }
     }
 
