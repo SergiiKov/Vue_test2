@@ -17,6 +17,9 @@ const App = {
             this.inputValue='';
            } 
         },
+        toUpperCase(item) {
+            return item.toUpperCase()
+        },
         remove(idx) {
             this.notes.splice(idx, 1)
 
