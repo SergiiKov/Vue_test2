@@ -48,6 +48,11 @@
       <h2 v-once>{{title}}</h2>
       <h2 v-pre>{{title}}</h2>
       <button class="btn" @click="title = 'New title'">Change title</button>
+      
+      <ul class="list">
+        <li class="list-item" v-for="item in 5">{{item}}</li>
+        <li class="list-item" v-for="(value, key) in person">{{key}}: {{value}}</li>
+      </ul>
     </div>
    
   </div>

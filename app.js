@@ -5,7 +5,12 @@ const App = {
             title: 'Title',
             inputValue: '',
             notes: [],
-            myHtml: '<h1>Vue 3 App</h1>'
+            myHtml: '<h1>Vue 3 App</h1>',
+            person: {
+                firstName: 'Sergii',
+                lastName: 'Kovtun',
+                age: '30'
+            }
         }
     },
     methods: {
