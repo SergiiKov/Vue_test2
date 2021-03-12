@@ -10,7 +10,8 @@ const App = {
                 firstName: 'Sergii',
                 lastName: 'Kovtun',
                 age: '30'
-            }
+            },
+            items: [1,2,3,4,5]
         }
     },
     methods: {
