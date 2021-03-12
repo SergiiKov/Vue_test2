@@ -52,7 +52,10 @@
       <ul class="list" v-if="items.length">
         <li class="list-item" v-for="item in 5">{{item}}</li>
         <li class="list-item" v-for="(value, key) in person">{{key}}: {{value}}</li>
-        <li class="list-item" v-for="(item, i) in items" @click="items.splice(i, 1)" :key="item">{{item}} 
+        <li class="list-item" 
+        v-for="(item, i) in ivenItems" 
+        @click="items.splice(i, 1)" 
+        :key="item">{{item}} 
           <input type="text" @click.stop>
         </li>
       </ul>

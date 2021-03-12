@@ -35,7 +35,12 @@ const App = {
     computed: {
         doblecount() {
           return this.notes.length *2  
+        },
+        ivenItems() {
+            return this.items.filter(i => i % 2 === 0)
         }
+
+
     },
     watch: {
         inputValue(value) {
