@@ -30,6 +30,10 @@ const App = {
         remove(idx) {
             this.notes.splice(idx, 1)
 
+        },
+        addItem() {
+            this.items.unshift(this.$refs.myInput.value)
+            this.$refs.myInput.value = ''
         }
     },
     computed: {
