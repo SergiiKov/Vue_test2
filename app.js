@@ -54,7 +54,11 @@ const App = {
             console.log('input Value change', value)
 
         } 
-    }
+    },
+    // template: `
+    // <div class="card center">
+    // <h2>This is from template</h2>
+    // </div>`
 
 }
 
