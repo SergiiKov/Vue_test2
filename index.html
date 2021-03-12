@@ -37,7 +37,15 @@
      </ul>
      <div v-else>Test</div>
      
-   </div>
+     <div>
+       <div v-html="myHtml"></div>
+      <h2 v-text="title"></h2>
+      <h2 v-once>{{title}}</h2>
+      <h2 v-pre>{{title}}</h2>
+      <button class="btn" @click="title = 'New title'">Change title</button>
+    </div>
+   
+  </div>
  </div>
     <script src="https://unpkg.com/vue@next"></script>
     <script src="app.js"></script>

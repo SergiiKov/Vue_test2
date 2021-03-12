@@ -4,7 +4,8 @@ const App = {
             plaseholderString: 'input text',
             title: 'Title',
             inputValue: '',
-            notes: []
+            notes: [],
+            myHtml: '<h1>Vue 3 App</h1>'
         }
     },
     methods: {
